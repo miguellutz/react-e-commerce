@@ -1,5 +1,5 @@
 .header__container {
-  background: rgb(44, 44, 44);
+  background: var(--color-bg-gray);
   padding: 40px 20px;
   display: flex;
   align-items: space-between;
