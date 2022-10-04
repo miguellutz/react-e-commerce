@@ -1,0 +1,31 @@
+.header__container {
+  background: rgb(44, 44, 44);
+  padding: 40px 20px;
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+}
+
+.header__container svg {
+  font-size: 40px;
+  transition: transform 500ms ease-in-out;
+}
+
+.header__container svg:hover {
+  transform: scale(1.1);
+}
+
+.header__container input {
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  text-align: center;
+  transition: var(--transition);
+  margin-left: 40px;
+  width: 60%;
+}
+
+.header__container input:hover {
+  border: 1px solid var(--color-primary);
+  background: transparent;
+}
