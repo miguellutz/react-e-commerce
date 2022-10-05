@@ -1,6 +1,8 @@
 import React from 'react'
 import './item.css'
 
+import Button from '../button/Button'
+
 import Rating from '../rating/Rating'
 import Ipad from '../../assets/ipad.jpeg'
 import Macbook from '../../assets/macbook.jpeg'
@@ -22,7 +24,7 @@ function Item() {
             <p>$899</p>
           </div>
           <div className="cart__container">
-            <button type="submit">Quantity</button>
+            <Button text="Quantity" />
             <BsCart />
           </div>
         </div>

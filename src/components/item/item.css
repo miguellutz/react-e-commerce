@@ -43,7 +43,7 @@
   align-items: center;
 }
 
-.cart__container > * {
+.cart__container svg {
   font-size: 1rem;
   width: 100%;
 }
