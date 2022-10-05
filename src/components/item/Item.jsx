@@ -4,24 +4,23 @@ import './item.css'
 import Button from '../button/Button'
 
 import Rating from '../rating/Rating'
-import Ipad from '../../assets/ipad.jpeg'
-import Macbook from '../../assets/macbook.jpeg'
-import Airpods from '../../assets/airpods.jpeg'
+// import Ipad from '../../assets/ipad.jpeg'
+// import Macbook from '../../assets/macbook.jpeg'
+// import Airpods from '../../assets/airpods.jpeg'
 
 import { BsCart } from 'react-icons/bs'
 
-function Item() {
+function Item({item}) {
   return (
-    <div className="items__container">
       <div className="item__container">
         <div className="item__img">
-          <img src={ require('../../assets/iphone.jpeg')} alt="iphone" />
+          <img src={item.img} alt={item.title} />
         </div>
         <div className="item__content">
           <div className="item__info">
-            <h2>iPhone 13</h2>
+            <h2>{item.title}</h2>
             <Rating />
-            <p>$899</p>
+            <p>{`$${item.price}`}</p>
           </div>
           <div className="cart__container">
             <Button text="Quantity" />
@@ -29,8 +28,9 @@ function Item() {
           </div>
         </div>
       </div>
-
-      <div className="item__container">
+  )
+}
+      /*<div className="item__container">
         <div className="item__img">
           <img src={Ipad} alt="iphone" />
         </div>
@@ -76,9 +76,6 @@ function Item() {
             <BsCart />
           </div>
         </div>
-      </div>
-    </div>
-  )
-}
+      </div> */
 
 export default Item
