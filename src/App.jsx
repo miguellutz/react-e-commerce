@@ -2,6 +2,9 @@ import React from 'react'
 import Header from './components/header/Header'
 import Items from './components/items/items'
 import Nav from './components/nav/Nav'
+import Button from './components/button/Button'
+
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Iphone from './assets/iphone.jpeg'
 import Ipad from './assets/ipad.jpeg'
@@ -48,11 +51,12 @@ function App() {
   ]
 
   return (
-    <>
+    <Router>
       <Header />
       <Items items={items} />
       <Nav />
-    </>
+      <Route path='/cart' component={Button} />
+    </Router>
   )
 }
 
