@@ -1,0 +1,17 @@
+@media screen and (min-width: 768px) {
+  .items__container {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .item__container {
+    margin: 0!important;
+  }
+
+  .item__container:hover {
+    transform: scale(1.02)!important;
+  }
+}

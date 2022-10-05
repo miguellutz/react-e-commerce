@@ -37,6 +37,13 @@ function App() {
       title: 'Airpods Pro',
       price: 99,
       rating: 5
+    },
+    {
+      id: 5,
+      img: Airpods,
+      title: 'Homepod Mini',
+      price: 299,
+      rating: 4
     }
   ]
 
