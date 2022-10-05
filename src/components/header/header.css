@@ -8,11 +8,12 @@
 
 .header__container svg {
   font-size: 40px;
+  color: var(--color-primary);
   transition: transform 500ms ease-in-out;
 }
 
 .header__container svg:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .header__container input {
