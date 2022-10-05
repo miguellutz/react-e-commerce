@@ -2,13 +2,17 @@
   border-radius: 20px;
   background: var(--color-primary);
   padding: 10px;
-  width: max-content;
+  width: 40%;
   transition: var(--transition)
 }
 
 .btn:hover {
+  color: white;
+  border: 1px solid white;
+  transform: scale(1.05)
+}
+
+.btn-qty {
   background: transparent;
   color: white;
-  border: 1px solid var(--color-primary);
-  transform: scale(1.05)
 }

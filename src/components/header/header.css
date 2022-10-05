@@ -1,6 +1,6 @@
 .header__container {
   background: var(--color-bg-gray);
-  padding: 40px 20px;
+  padding: 20px 10px;
   display: flex;
   align-items: space-between;
   justify-content: center;
