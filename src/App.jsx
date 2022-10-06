@@ -2,9 +2,9 @@ import React from 'react'
 import Header from './components/header/Header'
 import Items from './components/items/items'
 import Nav from './components/nav/Nav'
-import Button from './components/button/Button'
+import About from './components/about/About'
 
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Iphone from './assets/iphone.jpeg'
 import Ipad from './assets/ipad.jpeg'
@@ -52,10 +52,23 @@ function App() {
 
   return (
     <Router>
-      <Header />
-      <Items items={items} />
-      <Nav />
-      <Route path='/cart' component={Button} />
+      <>
+        <Header />
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Items items={items}/>} />
+          {/* <Route
+            path="/"
+            exact
+            render={(props) => (
+              <>
+                <Items items={items} />
+              </>
+            )}
+          /> */}
+          <Route path='/about' element={<About/>} />
+        </Routes>
+      </>
     </Router>
   )
 }
