@@ -25,7 +25,7 @@ function App() {
       title: 'iPhone 13 Pro',
       price: 999,
       rating: 5,
-      cart: false
+      cart: true
     },
     {
       id: 2,

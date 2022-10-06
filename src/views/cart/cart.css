@@ -1,0 +1,20 @@
+.cart__header {
+  padding: 40px 20px 20px;
+}
+
+.cart__header h1 {
+  text-align: center;
+
+}
+
+.cart__container .btn-cart {
+  display: none;
+}
+
+.items__container {
+  grid-template-columns: 1fr!important;
+}
+
+.item__container {
+  height: 30vh;
+}
