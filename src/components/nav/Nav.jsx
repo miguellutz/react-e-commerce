@@ -14,7 +14,7 @@ function Nav() {
   return (
     <nav>
       <Link to="/" onClick={() => setActiveNav('/')} className={activeNav === '/' ? 'active' : ''}><AiFillHome /></Link>
-      <Link to="/about" onClick={() => setActiveNav('/about')} className={activeNav === '/about' ? 'active' : ''}><FaShoppingCart /></Link>
+      <Link to="/cart" onClick={() => setActiveNav('/cart')} className={activeNav === '/cart' ? 'active' : ''}><FaShoppingCart /></Link>
       <Link to="/account" onClick={() => setActiveNav('/account')} className={activeNav === '/account' ? 'active' : ''}><BsFillPersonFill /></Link>
       {/* <a href="/" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiFillHome /></a>
       <a href="#cart" onClick={() => setActiveNav('#cart')} className={activeNav === '#cart' ? 'active' : ''}><FaShoppingCart /></a>
