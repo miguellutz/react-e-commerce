@@ -18,7 +18,7 @@ function Item({item}) {
           <Rating />
           <p>{`$${item.price}`}</p>
         </div>
-        <div className="cart__container">
+        <div className="shop__container">
           <Button text="Quantity" class="btn btn-qty" />
           <Button text={<BsCart />} class="btn"/>
         </div>
