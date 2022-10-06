@@ -41,7 +41,7 @@ function App() {
       title: 'Macbook Pro 14"',
       price: 1999,
       rating: 4.5,
-      cart: false
+      cart: true
     },
     {
       id: 4,

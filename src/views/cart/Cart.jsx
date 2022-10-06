@@ -1,6 +1,7 @@
 import React from 'react'
 import './cart.css'
 
+import CartTotal from './CartTotal'
 import Items from '../../components/items/items'
 
 function Cart({items}) {
@@ -12,6 +13,7 @@ function Cart({items}) {
         <h1>Cart Overview</h1>
       </div>
       <Items items={cartItems} />
+      <CartTotal items={cartItems} />
     </div>
   )
 }
