@@ -49,7 +49,7 @@ function App() {
       title: 'Airpods Pro',
       price: 99,
       rating: 5,
-      cart: false
+      cart: true
     },
     {
       id: 5,

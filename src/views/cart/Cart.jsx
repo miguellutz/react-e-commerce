@@ -12,8 +12,10 @@ function Cart({items}) {
       <div className="cart__header">
         <h1>Cart Overview</h1>
       </div>
-      <Items items={cartItems} />
-      <CartTotal items={cartItems} />
+      <div className="cart__content">
+        <Items items={cartItems} />
+        <CartTotal items={cartItems} />
+      </div>
     </div>
   )
 }
