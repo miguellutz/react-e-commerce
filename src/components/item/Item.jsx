@@ -20,7 +20,7 @@ function Item({item}) {
         </div>
         <div className="shop__container">
           <Button text="Quantity" class="btn btn-qty" />
-          <Button text={<BsCart />} class="btn"/>
+          <Button text={<BsCart />} class="btn btn-cart"/>
         </div>
       </div>
     </div>

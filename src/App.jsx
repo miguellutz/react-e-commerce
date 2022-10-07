@@ -25,7 +25,7 @@ function App() {
       title: 'iPhone 13 Pro',
       price: 999,
       rating: 5,
-      cart: false
+      cart: true
     },
     {
       id: 2,
@@ -41,7 +41,7 @@ function App() {
       title: 'Macbook Pro 14"',
       price: 1999,
       rating: 4.5,
-      cart: false
+      cart: true
     },
     {
       id: 4,
@@ -49,7 +49,7 @@ function App() {
       title: 'Airpods Pro',
       price: 99,
       rating: 5,
-      cart: false
+      cart: true
     },
     {
       id: 5,
