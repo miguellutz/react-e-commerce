@@ -1,5 +1,5 @@
 .cart__header {
-  padding: 40px 40px 0;
+  padding: 40px 40px 20px;
 }
 
 .cart__header h1 {
@@ -8,16 +8,16 @@
 }
 
 .cart__content {
-  padding: 40px;
-  margin-bottom: 80px;;
+  padding: 20px;
+  margin-bottom: 100px;;
 }
 
 .cart__container .btn-cart {
   display: none;
 }
 
-.items__container {
-  grid-template-columns: 1fr!important;
+.cart__container .items__container {
+  grid-template-columns: 1fr;
 }
 
 .cartTotal__container {
@@ -38,7 +38,7 @@
     gap: 40px;
   }
 
-  .items__container {
+  .cart__container .items__container {
     width: 70%;
   }
 
