@@ -7,8 +7,9 @@ import Rating from '../rating/Rating'
 import { BsCart } from 'react-icons/bs'
 
 function Item({item}) {
+  const checkItemCart = (item) => item.cart ? 'x' : <BsCart />;
   return (
-    <div className="item__container" id={item.id}>
+    <div className="item__container">
       <div className="item__img">
         <img src={item.img} alt={item.title} />
       </div>
@@ -20,7 +21,7 @@ function Item({item}) {
         </div>
         <div className="shop__container">
           <Button text="Quantity" class="btn btn-qty" />
-          <Button text={<BsCart />} class="btn btn-cart"/>
+          <Button text={checkItemCart(item)} class="btn btn-cart"/>
         </div>
       </div>
     </div>
