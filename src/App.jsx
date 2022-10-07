@@ -2,10 +2,10 @@ import React from 'react'
 
 // <------- Components -------->
 import Header from './components/header/Header'
-import Items from './components/items/items'
 import Nav from './components/nav/Nav'
 
 // <---------- Views ----------->
+import Home from './views/home/Home'
 import Cart from './views/cart/Cart'
 import Account from './views/account/Account'
 
@@ -67,7 +67,7 @@ function App() {
         <Header />
         <Nav />
         <Routes>
-          <Route path="/" element={<Items items={items}/>} />
+          <Route path="/" element={<Home items={items}/>} />
           {/* <Route
             path="/"
             exact
