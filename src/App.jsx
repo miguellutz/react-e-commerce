@@ -78,6 +78,8 @@ function App() {
             )}
           /> */}
           <Route path='/cart' element={<Cart items={items}/>} />
+          {// React V6 component replaced by element for Route
+          }
           <Route path='/account' element={<Account/>} />
         </Routes>
       </>
