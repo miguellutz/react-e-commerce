@@ -61,22 +61,16 @@ function App() {
     }
   ]
 
+  // const toggleCart = (item) => item.cart = !item.cart
+  const toggleCart = () => console.log('click')
+
   return (
     <Router>
       <>
         <Header />
         <Nav />
         <Routes>
-          <Route path="/" element={<Home items={items}/>} />
-          {/* <Route
-            path="/"
-            exact
-            render={(props) => (
-              <>
-                <Items items={items} />
-              </>
-            )}
-          /> */}
+          <Route path="/" element={<Home items={items} onClick={toggleCart} />} />
           <Route path='/cart' element={<Cart items={items}/>} />
           {// React V6 component replaced by element for Route
           }
